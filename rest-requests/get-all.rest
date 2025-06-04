@@ -1,0 +1,35 @@
+###
+GET http://localhost:3001/api/notes
+###
+
+
+
+
+GET http://localhost:3001/api/notes/1
+
+
+
+###
+DELETE http://localhost:3001/api/notes/2
+
+
+
+
+###
+POST http://localhost:3001/api/notes/ HTTP/1.1
+content-type: application/json
+
+{
+    
+    "content": "i am the happiest person in the world"
+}
+
+
+###
+POST http://localhost:3001/api/notes/ HTTP/1.1
+content-type: application/json
+
+{
+    "content":"I am the best software Engineer in the world",
+    "important":true
+}
